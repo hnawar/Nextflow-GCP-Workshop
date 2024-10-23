@@ -15,7 +15,7 @@
  */
 data "google_compute_image" "debian" {
   project = "debian-cloud"
-  family  = "debian-10"
+  family  = "debian-12"
 }
 //Create nextflow service account and assign required roles
 module "nextflow_service_account" {
