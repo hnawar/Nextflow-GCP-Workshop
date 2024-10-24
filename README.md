@@ -17,8 +17,8 @@ The script will create the following in an empty project
   2. Enable Resource Manager and IAM services 
      `gcloud services enable iam.googleapis.com cloudresourcemanager.googleapis.com`
   4. Make any desired changes to the variables
-  5. Run terraform init
-  6. Run terraform apply
+  5. Run `terraform init`
+  6. Run `terraform apply`
 
   Once the terraform is fully execute it will display some information icluding the VM and Storag Bucket name and the gcloud commange to ssh to the VM.
   Note that it can take a few minutes for the installation script to finish, when it is complete you will see a Google Cloud ASCII logo when you SSH to the VM
