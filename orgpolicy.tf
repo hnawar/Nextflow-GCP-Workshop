@@ -38,7 +38,7 @@ resource "google_project_organization_policy" "trustedimage_project_policy" {
 
 
 resource "time_sleep" "wait_120_seconds" {
-  count = var.set_trustedimage_project_policy || var.set_shielded_vm_policy) || var.enable_services ? 1 : 0
+  count = (var.set_trustedimage_project_policy || var.set_shielded_vm_policy || var.enable_services) ? 1 : 0
 
   depends_on = [
     google_project_organization_policy.shielded_vm_policy,
