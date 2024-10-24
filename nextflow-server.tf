@@ -73,6 +73,7 @@ resource "google_compute_instance" "nextflow_server" {
   depends_on = [
     google_storage_bucket_object.bootstrap,
     google_storage_bucket_object.config,
+    time_sleep.wait_120_seconds
   ]
 }
 
