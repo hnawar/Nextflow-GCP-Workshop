@@ -22,9 +22,6 @@ resource "google_project_organization_policy" "shielded_vm_policy" {
   boolean_policy {
     enforced = false
   }
-  depends_on = [
-    module.project_radlab_gen_nextflow
-  ]
 }
 
 resource "google_project_organization_policy" "trustedimage_project_policy" {
@@ -37,10 +34,6 @@ resource "google_project_organization_policy" "trustedimage_project_policy" {
       all = true
     }
   }
-
-  depends_on = [
-    module.project_radlab_gen_nextflow
-  ]
 }
 
 resource "google_project_organization_policy" "domain_restricted_sharing_policy" {
@@ -53,10 +46,6 @@ resource "google_project_organization_policy" "domain_restricted_sharing_policy"
       all = true
     }
   }
-
-  depends_on = [
-    module.project_radlab_gen_nextflow
-  ]
 }
 
 resource "time_sleep" "wait_120_seconds" {
