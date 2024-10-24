@@ -14,7 +14,7 @@ The script will create the following in an empty project
   ## Deploying to an existing project
   You can deploy the script to an new/existing project by following these steps
   1. Clone this repo to Cloud Shell and broswse to the repo fodler
-  2. Enable Resource Manager and IAM services
+  2. Enable Resource Manager and IAM services /n
      `gcloud services enable iam.googleapis.com cloudresourcemanager.googleapis.com`
   4. Make any desired changes to the variables
   5. Run terraform init
